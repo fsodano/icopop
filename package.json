@@ -1,0 +1,36 @@
+{
+  "name": "icopop",
+  "version": "1.0.0",
+  "description": "Icopop",
+  "main": "icopop.js",
+  "repository": "https://github.com/fsodano/icopop",
+  "author": "Fabricio Leonardo Sodano Pascazi",
+  "license": "MIT",
+  "scripts": {
+    "demo": "webpack demo/demo.js demo/dist/demo.js",
+    "test": ""
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-amd": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "webpack": "^3.1.0"
+  },
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-amd"
+    ],
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions"
+            ]
+          }
+        }
+      ]
+    ]
+  }
+}

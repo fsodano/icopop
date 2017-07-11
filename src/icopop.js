@@ -1,5 +1,5 @@
 export class IcoPop {
-  constructor (config) {
+  constructor (config = {class: '', source: 'html', content: ''}) {
     this.config = config
     this.overlayWrapper = null
     this.overlay = null
